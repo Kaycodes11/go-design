@@ -1,3 +1,10 @@
+/*BOX MODEL:*/
+/*content: the content itself rendered from HTML*/
+/*padding : space around the content itself*/
+/*border: space around the content's padding*/
+/*margin: space around content's padding's border area*/
+
+
 /* Universal Selector [before applying any styles reset here as needed] */
 * {
     font-family: Arial;
@@ -188,7 +195,7 @@ p {
 
 /* Sets value back to the default browser style */
 .initial {
-    color: initial!important;
+    color: initial !important;
 }
 
 /* if naturally inherited then "inherit" else "initial" */
@@ -205,4 +212,19 @@ p[title~="flexbox"] {
     background-color: red;
     display: inline-block;
     padding: 40px 5px;
+}
+
+p[title~="typescript"] {
+    background-color: red;
+    margin: 30px 50px;
+    padding: 5px;
+}
+
+.box-model-p {
+    background-color: skyblue;
+    display: inline-block;
+    padding: 50px;
+    border: 10px solid limegreen;
+    margin-top: 150px;
+    margin-left: 50px;
 }
