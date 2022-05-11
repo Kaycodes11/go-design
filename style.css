@@ -1,4 +1,4 @@
-/* Universal Selector */
+/* Universal Selector [before applying any styles reset here as needed] */
 * {
     font-family: Arial;
 }
@@ -44,6 +44,26 @@ input[type="button"] {
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* CHECKED */
+input[type="checkbox"]:checked {
+    outline: 2px solid blue;
+}
+
+/* DISABLED */
+input[type="text"]:disabled {
+    background-color: lightgray;
+}
+
+/* FOCUS  */
+#cool:focus {
+    background-color: aqua;
+}
+
+/* NTH CHILD */
+p:nth-child(2) {
+    color: orangered;
 }
 
 /*Attribute starts with given (value/word) here */
@@ -92,3 +112,97 @@ p ~ h4 {
     color: orangered;
 }
 
+/* UNVISITED LINK */
+a:link {
+    text-decoration: none;
+}
+
+/* HOVERED LINK */
+a:hover {
+    color: orangered;
+}
+
+/* ACTIVE LINK */
+a:active {
+    color: lawngreen;
+}
+
+/* VISITED LINK */
+a:visited {
+    color: red;
+}
+
+#paragraph::first-letter {
+    color: lightgreen;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px grey;
+}
+
+#paragraph::first-line {
+    color: blue;
+}
+
+::selection {
+    background-color: red;
+    color: white;
+}
+
+.plus::after {
+    content: "+";
+}
+
+.plus::before {
+    content: " - ";
+}
+
+#a {
+    color: orangered;
+}
+
+/* SPECIFICITY : ID > CLASS > ELEMENT > PSEUDO ELEMENT(::hover) */
+
+.ul li a {
+    color: red;
+}
+
+
+ul li a {
+    color: aquamarine;
+}
+
+
+#container {
+    color: red;
+}
+
+p {
+    text-align: center;
+    font-size: 50px;
+    color: green;
+}
+
+/* SETS VALUE to inherit from container */
+.inherit {
+    color: inherit;
+}
+
+/* Sets value back to the default browser style */
+.initial {
+    color: initial!important;
+}
+
+/* if naturally inherited then "inherit" else "initial" */
+.unset {
+    color: unset;
+}
+
+/* if container has defined style (here yes) so it'll refer to that color else fallback to default browser style respectively  */
+.revert {
+    color: revert;
+}
+
+p[title~="flexbox"] {
+    background-color: red;
+    display: inline-block;
+    padding: 40px 5px;
+}
