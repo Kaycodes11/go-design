@@ -232,6 +232,7 @@ p[title~="typescript"] {
 div {
     height: 10px;
 }
+
 #absolute {
     width: 50px;
     background-color: rebeccapurple;
@@ -241,11 +242,96 @@ div {
     width: 50%; /* taking 50% from outerDiv x axis i.e. width = 100px */
     background-color: limegreen;
 }
+
 #outerDiv2 {
     width: 100px;
     padding: 2px;
     border: 2px solid red;
 }
+
 p {
     font-size: 2em;
 }
+
+#sentence {
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+
+    text-decoration: none;
+    text-decoration: underline solid limegreen;
+    /*text-decoration-color: blue;*/
+    /*text-decoration-color: overline;*/
+    /*text-decoration-color: dashed;*/
+    text-indent: 20px;
+    /*text-transform: capitalize; !* lowercase/uppercase *!*/
+}
+
+#paragraph1 {
+    overflow: hidden;
+    white-space: nowrap;
+    /*white-space: normal;*/
+    border: 2px solid limegreen;
+    background-color: lightgray;
+    text-overflow: ellipsis;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 50px;
+    /*font-weight: bolder;*/
+    /*text-shadow: 2px 2px 5px grey;*/
+    /*word-spacing: 2px;*/
+    /*letter-spacing: 1px;*/
+}
+
+
+.frame {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px lightgrey;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+.frame:hover {
+    box-shadow: 8px 8px 10px lightgrey;
+    cursor: pointer;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+
+#colorName {
+    background-color: crimson;
+}
+
+#hex {
+    background-image: linear-gradient(180deg, #2af598, #009efd 100%);
+    /*background-color: #2cd51e;*/
+}
+
+#rgb {
+    background-color: rgb(37, 21, 224);
+}
+
+#rgba {
+    background-color: rgba(37, 21, 224, 0.5);
+}
+
+#hsl {
+    background-color: hsl(24, 90%, 58%);
+}
+
+#hsla {
+    background-color: hsla(24, 94%, 58%, 0.8);
+}
+
