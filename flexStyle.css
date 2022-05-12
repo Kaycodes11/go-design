@@ -1,0 +1,71 @@
+* {
+    text-align: center;
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+#container {
+    width: 1000px;
+    height: 400px;
+    padding: 20px; /*making space around the element itself */
+    background-color: #4524FB;
+    margin: 80px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly; /* space-between */
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.item {
+    /* how much of the width it should take from container on main/X axis? */
+    /*flex-basis: 200px; !* maybe alternative to the width below *!*/
+    /*width: 150px;*/
+    /*max-width: 500px;*/
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 2px 5px black;
+    border-radius: 8px;
+    color: #000000;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    transition: all 0.1s linear;
+    background-color: #15f831;
+    font-weight: bold;
+    cursor: pointer;
+    /*flex: [grow] [shrink] [basis]*/
+    flex: 1 0 200px;
+}
+
+.three {
+    align-self: flex-end;
+}
+
+/* based on the given value for flex-grow/shrink; it will take that much space from container */
+/* "Only When maximizing/minimizing" the page; flex items may grow/shrink as per defined value on it */
+/*.one {*/
+/*    order: 0;*/
+/*    flex-grow: 0;*/
+/*    flex-shrink: 1;*/
+/*}*/
+
+/*.two {*/
+/*    order: 0;*/
+/*    flex-grow: 0;*/
+/*    flex-shrink: 1;*/
+/*}*/
+
+/*.three {*/
+/*    order: 0;*/
+/*    flex-grow: 0;*/
+/*    flex-shrink: 0;*/
+/*}*/
+
+/*.four {*/
+/*    order: 0;*/
+/*    flex-grow: 0;*/
+/*    flex-shrink: 0;*/
+/*}*/
