@@ -471,10 +471,17 @@ span, a, img {
 .d-transform {
     width: 100px;
     height: 100px;
-    /* making space around element's padding's border */
-    margin: 200px auto;
-    background-color: dodgerblue;
-    color: white;
+    margin: 100px auto;
+    background-color: red;
+
+    /*transition-property: all;*/
+    /*transition-delay: 1s;*/
+    /*transition-duration: .5s;*/
+    /*transition-timing-function: ease-in;*/
+
+    transition: all .5s linear;
+
+    /*transition-timing-function: cubic-bezier(0, .98, 1, -0.02);*/
     /*transform: rotate(45deg);*/
     /*transform: scaleY(2);*/
     /*transform: skewY(20deg);*/
@@ -484,7 +491,12 @@ span, a, img {
 }
 
 .d-transform:hover {
-    cursor: pointer;
-    transition: all 2s linear;
-    transform: rotateY(360deg);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: limegreen;
+    transform: rotate(180deg);
+    /*cursor: pointer;*/
+    /*transition: all 2s linear;*/
+    /*transform: rotateY(360deg);*/
 }
