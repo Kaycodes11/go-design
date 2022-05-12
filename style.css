@@ -372,6 +372,7 @@ h1 {
     position: relative;
     left: 200px;
 }
+
 .container-position {
     border: 5px solid black;
     width: 300px;
@@ -421,4 +422,36 @@ h1 {
 
     /*background-attachment: fixed;*/
     /*background-clip: border-box;*/
+}
+
+p, h2, h3, h4 {
+    border: 1px solid green;
+}
+
+span, a, img {
+    border: 1px solid blue;
+    display: inline-block;
+    width: 200px;
+}
+
+.text-shadow {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 5px 2px 1px red;
+}
+
+.button-style {
+    font-size: 20px;
+    margin: 50px auto;
+    display: block;
+    /*  making space around the element */
+    padding: 5px 15px;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    box-shadow: 2px 2px 5px grey;
 }
