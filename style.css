@@ -232,29 +232,22 @@ p[title~="typescript"] {
 div {
     height: 10px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 45eba62d60f403ff6cb06c6c4fa99381bfbe93ad
-#absolute {
-    width: 50px;
-    background-color: rebeccapurple;
-}
+/*#absolute {*/
+/*    width: 50px;*/
+/*    background-color: rebeccapurple;*/
+/*}*/
 
-#relative {
-    width: 50%; /* taking 50% from outerDiv x axis i.e. width = 100px */
-    background-color: limegreen;
-}
-<<<<<<< HEAD
+/*#relative {*/
+/*    width: 50%; !* taking 50% from outerDiv x axis i.e. width = 100px *!*/
+/*    background-color: limegreen;*/
+/*}*/
 
-=======
->>>>>>> 45eba62d60f403ff6cb06c6c4fa99381bfbe93ad
 #outerDiv2 {
     width: 100px;
     padding: 2px;
     border: 2px solid red;
 }
-<<<<<<< HEAD
 
 p {
     font-size: 2em;
@@ -305,10 +298,12 @@ h1 {
     text-align: center;
     margin: 10px;
 }
+
 .frame:hover {
     box-shadow: 8px 8px 10px lightgrey;
     cursor: pointer;
 }
+
 .circle {
     width: 200px;
     height: 200px;
@@ -342,8 +337,47 @@ h1 {
     background-color: hsla(24, 94%, 58%, 0.8);
 }
 
-=======
-p {
-    font-size: 2em;
+
+#red {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 20px;
+    border: 10px solid black;
+    margin: 5px;
+    /* margin space shouldn't be considered since that space outside the element */
+    /* so to just take the space from given width and height = 200px, box-sizing: border-box is needed */
+    box-sizing: border-box;
 }
->>>>>>> 45eba62d60f403ff6cb06c6c4fa99381bfbe93ad
+
+/*#blue {*/
+/*    width: 50%;*/
+/*    height: 200px;*/
+/*    background-color: blue;*/
+/*}*/
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid grey;
+}
+
+#static {
+    background: red;
+}
+
+#relative {
+    background: blue
+}
+
+#absolute {
+    background: yellow
+}
+
+#fixed {
+    background: green;
+}
+
+#sticky {
+    background: black;
+}
