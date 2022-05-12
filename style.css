@@ -467,3 +467,24 @@ span, a, img {
     background-image: radial-gradient(darkorange, yellow);
     background-image: repeating-radial-gradient(farthest-corner at 100px 100px, darkorange 25%, yellow 50%);
 }
+
+.d-transform {
+    width: 100px;
+    height: 100px;
+    /* making space around element's padding's border */
+    margin: 200px auto;
+    background-color: dodgerblue;
+    color: white;
+    /*transform: rotate(45deg);*/
+    /*transform: scaleY(2);*/
+    /*transform: skewY(20deg);*/
+    /*transform: translate(50px, 100px); !* -50px *!*/
+    /*transform: matrix([scaleX], [skewY], [skewX], [scaleY], [translateX], [translateY]);*/
+    /*transform: matrix(2, 1, 1, 2, 70, -70);*/
+}
+
+.d-transform:hover {
+    cursor: pointer;
+    transition: all 2s linear;
+    transform: rotateY(360deg);
+}
