@@ -364,20 +364,61 @@ h1 {
 
 #static {
     background: red;
+    position: static;
 }
 
 #relative {
-    background: blue
+    background: blue;
+    position: relative;
+    left: 200px;
+}
+.container-position {
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+    position: relative;
 }
 
 #absolute {
-    background: yellow
+    background: yellow;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*top: 200px;*/
+    /*left: 200px;*/
 }
 
-#fixed {
-    background: green;
-}
+/*#fixed {*/
+/*    background: green;*/
+/*    position: fixed;*/
+/*    top: 500px;*/
+/*    left: 500px;*/
+/*    z-index: 1;*/
+/*}*/
 
-#sticky {
-    background: black;
+/*#sticky {*/
+/*    background: purple;*/
+/*    position: sticky;*/
+/*    top: 20px;*/
+/*    z-index: 2;*/
+/*}*/
+
+.background-div {
+    border: 1px solid grey;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    /*background-color: red;*/
+    /*background-image: url("https://assets-prd.ignimgs.com/2021/12/10/sonicfrontiers-blogroll-1639102469797.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*display: none;*/
+    /*background-size: 200px;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+
+    /* replacing background color, image, repeat, size and position */
+    background: url("https://assets-prd.ignimgs.com/2021/12/10/sonicfrontiers-blogroll-1639102469797.jpg") center/cover no-repeat green;
+
+    /*background-attachment: fixed;*/
+    /*background-clip: border-box;*/
 }
