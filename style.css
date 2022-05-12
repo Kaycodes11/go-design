@@ -10,7 +10,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    background-color: #222222;
+    /*background-color: #222222;*/
 }
 
 /* Element Selector */
@@ -691,4 +691,60 @@ div#block-container {
         opacity: 0;
 
     }
+}
+
+/* MEDIA QUERIES */
+@media print {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+@media screen and (min-width: 320px) {
+    h1{
+        text-align: center;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    p {
+        font-size: 14px;
+        padding: 0px 20px;
+        outline-width: 22px;
+    }
+    img {
+        width: 300px;
+    }
+}
+@media screen and (min-width: 500px) {
+    h1{
+        color: lime;
+    }
+    p {
+        font-size: 15px;
+        padding: 0px 40px;
+        line-height: 25px;
+    }
+    img {
+        border: 2px solid #ffffff
+    }
+}
+@media screen and (min-width: 600px) {
+    h1{
+        color: orangered;
+    }
+    p {
+        font-size: 16px;
+        padding: 0px 40px;
+        line-height: 28px;
+    }
+    img {
+        border-radius: 50%;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        background-image: linear-gradient(-225deg, #3d4e81 0%, #5753c9 48%, #6e7ff3 100%);
+    }
+    
 }
