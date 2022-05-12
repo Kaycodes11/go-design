@@ -13,6 +13,20 @@
     /*background-color: #222222;*/
 }
 
+/* css variable  */
+:root {
+    --gradientBG: linear-gradient(to bottom right, #495aff, #0acffe);
+    --mainFont: arial, sans-seriff;
+    --boxShadow: 2px 5px 10px grey;
+    --borderRadius: 0px
+}
+/* now to use the css variable */
+#hero {
+    width: 100%;
+    height: 70vh;
+    background-image: var(--gradientBG);
+}
+
 /* Element Selector */
 p {
     font-weight: bold;
