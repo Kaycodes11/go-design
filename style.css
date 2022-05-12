@@ -744,7 +744,26 @@ div#block-container {
 
 @media (orientation: landscape) {
     body {
-        background-image: linear-gradient(-225deg, #3d4e81 0%, #5753c9 48%, #6e7ff3 100%);
+        /*background-image: linear-gradient(-225deg, #3d4e81 0%, #5753c9 48%, #6e7ff3 100%);*/
     }
     
+}
+
+h1#grad-text {
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 8em;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/02/f2/64/02f2649eaa7743a8e0a117c3e0a386ee.jpg");
+    background-size: cover;
+    -webkit-background-clip: text;
+    /*-webkit-text-fill-color: transparent;*/
+    color: transparent;
+}
+
+p .gradient-text {
+    font-size: 3.9em;
+    padding: 20px;
+    text-align: center;
 }
