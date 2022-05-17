@@ -93,6 +93,7 @@
     font-family: sans-serif;
     border: 1px solid black;
 }
+.small {border: 1px solid black;}
 .header {
     grid-column: 1 / -1;
     border: 1px solid black;
