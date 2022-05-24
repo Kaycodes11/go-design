@@ -12,7 +12,7 @@
     "postcss-cli": "^9.1.0"
   },
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch:sass": "node-sass sass/main.scss css/nexter.css -w",
     "devserver": "live-server nexter.html",
     "start": "npm-run-all --parallel devserver watch:sass"
   },
