@@ -27,7 +27,8 @@ body {
   /* if there're 4the element then it will take avaiable space as it set to auto */
   /* grid-template-columns: 200px auto 10rem; */
   /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
   /* grid-template-columns: 100px 100px 100px; */
   /* grid-template-columns: 1fr 5fr 2fr 1fr; */
   /* grid-template-columns: 5fr 1fr; */
@@ -40,7 +41,8 @@ body {
   /* grid-template-rows: 1fr 1fr 1fr; */
   /* grid-template-rows: 100px 100px 100px; */
   /* grid-template-rows: 100px 100px 100px 100px 100px; */
-  grid-template-rows: 100px 100px;
+  /* grid-template-rows: 100px 100px; */
+  grid-template-rows: repeat(2, 300px);
   /* grid-template-rows: [start] 100px [row-1-end] 100px [row-2-end] 100px [end]; */
   /* grid gap has obsolete */
   /* grid-column-gap: 20px; */
@@ -96,7 +98,7 @@ body {
 
   /* grid-area: a; */
 
-  order: 2;
+  /* order: 2; */
 }
 .cell-2 {
   background: #f0a202;
@@ -105,7 +107,7 @@ body {
 .cell-3 {
   background: #d95d39;
   /* grid-area: c; */
-  order: 4;
+  /* order: 4; */
 }
 .cell-4 {
   background: #202c59;
@@ -116,9 +118,9 @@ body {
 .cell-5 {
   background: #51cb20;
   /* grid-area: e; */
-  order: 3;
+  /* order: 3; */
 }
 .cell-6 {
   /* grid-area: f; */
-  order: -1;
+  /* order: -1; */
 }
