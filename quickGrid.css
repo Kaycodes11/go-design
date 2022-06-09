@@ -10,7 +10,8 @@ body {
 }
 
 .container {
-  border: 4px solid green;
+  /* test */
+  border: 4px solid black;
 
   display: grid;
   /* so basically here no matter how many item has within container; it will take two then 
@@ -18,8 +19,14 @@ body {
   now it can n no. of item with given size to render column-wise
    */
   /* grid-template-columns: 200px 300px; */
+  /* grid-template-columns: 200px 300px 200px; */
   /* grid-template-columns: 200px 300px 200px 100px; */
-  grid-template-columns: 200px;
+  /* grid-template-columns: 200px; */
+  /* grid-template-columns: 200px 7rem 10em 5%; */
+
+  /* if there're 4the element then it will take avaiable space as it set to auto */
+  grid-template-columns: 200px auto 10rem;
+  grid-template-rows: 300px 20rem;
 }
 
 .cell {
@@ -28,6 +35,22 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
+  border: 3px solid red;
+  color: #ffffff;
+}
 
-  border: 1px solid red;
+.cell-1 {
+  background: #581f18;
+}
+.cell-2 {
+  background: #f0a202;
+}
+.cell-3 {
+  background: #d95d39;
+}
+.cell-4 {
+  background: #202c59;
+}
+.cell-5 {
+  background: #51cb20;
 }
