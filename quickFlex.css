@@ -1,23 +1,38 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
   background-color: #ccc;
   padding: 10px;
+  /* height: 1000px; */
 
   display: flex;
+
   /* this is applied by default where vertical is cross axis and horizontal is main axis */
   flex-direction: row;
 
   /* here vertical become main axis while horizontal becomes cross axis */
-  /* flex-direction: column-reverse; */
+  /* flex-direction: column; */
 
-  justify-content: center;
-  align-items: stretch; /* Streach to fit the avaiable area vertically on cross axis */
-  align-items: flex-start; /* item  will start from beginning of cross axis */
-  align-items: flex-end; /* item  will start from the end of cross axis */
+  /* justify-content: center; */
+  justify-content: space-between;
+
+  /* Streach to fit the avaiable area vertically on cross axis */
+  /* align-items: stretch; */
+
+  /* item  will start from beginning of cross axis */
+  /* align-items: flex-start; */
+  /* item  will start from the end of cross axis */
+  /* align-items: flex-end; */
+  /* item  will start from the end of cross axis */
+  /* align-items: baseline; */
+  align-items: center;
+
+  /* when something going out of the container, with wrap it would go to next line */
+  flex-wrap: wrap;
 }
 
 .item {
@@ -31,8 +46,24 @@
 
 .i2 {
   height: 200px;
+  /*
+  flex-basis: 200px;
+  flex-shrink: 1;
+  */
+
+  flex: 0 1 300px; /* flex-grow flex-shrink flex-basis */
+}
+
+.i3 {
+  order: 1;
+  flex: 1;
 }
 
 .i4 {
-  font-size: 70px;
+  /* moves vertically up/down based on flex-start (up)/ flex-end (down) vertically on cross axis */
+  align-self: flex-end;
+  /* moven up and down veritcally  to fill the avaiable space on the cross axis */
+  /* align-self: stretch; */
+
+  order: -1;
 }
