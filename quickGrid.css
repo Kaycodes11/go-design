@@ -10,9 +10,9 @@ body {
 }
 
 .container {
-  /* test */
   border: 4px solid black;
 
+  min-height: 100vh;
   display: grid;
   /* so basically here no matter how many item has within container; it will take two then 
   another two will go next line to sit as column with size for first 200px 300px;
@@ -26,7 +26,8 @@ body {
 
   /* if there're 4the element then it will take avaiable space as it set to auto */
   grid-template-columns: 200px auto 10rem;
-  grid-template-rows: 300px 20rem;
+  /* grid-template-rows: 300px 5rem auto; */
+  grid-template-rows: auto 5rem;
 }
 
 .cell {
