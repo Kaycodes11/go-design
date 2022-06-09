@@ -9,6 +9,9 @@ body {
   color: #222222;
 }
 
+/* align-items (horizontally) justify-items (vertically) works cells within the container */
+/* justify-self align-self -- single cell  */
+
 .container {
   border: 4px solid black;
   margin: 7rem;
@@ -28,10 +31,10 @@ body {
   /* grid-template-columns: 200px auto 10rem; */
   /* grid-template-columns: 1fr 1fr; */
   /* grid-template-columns: 1fr 1fr 1fr; */
-  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
   /* grid-template-columns: repeat(3, 100px); */
   /* grid-template-columns: 100px 100px 1fr; */
-  grid-template-columns: 100px 100px 200px;
+  /* grid-template-columns: 100px 100px 200px; */
   /* grid-template-columns: 100px 100px 100px; */
   /* grid-template-columns: 1fr 5fr 2fr 1fr; */
   /* grid-template-columns: 5fr 1fr; */
@@ -46,16 +49,17 @@ body {
   /* justify-content: space-between; */
   /* justify-content: space-around; */
 
-  /* align-content: center;
-  align-content: flex-start;
-  align-content: flex-end;
-  align-content: stretch;
-  align-content: space-around; */
-  align-content: space-between;
+  /* align-content: center; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: stretch; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
 
   /* grid-template-rows: 300px 5rem auto; */
   /* grid-template-rows: auto 5rem; */
   /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-rows: repeat(2, 1fr);
   /* grid-template-rows: 100px 100px 100px; */
   /* grid-template-rows: 100px 100px 100px 100px 100px; */
   /* grid-template-rows: 100px 100px; */
@@ -81,6 +85,9 @@ body {
     "c c b"
     "d d d"
     "e f f"; */
+
+  align-items: flex-start;
+  justify-items: flex-start;
 }
 
 .cell {
@@ -116,6 +123,9 @@ body {
   /* grid-area: a; */
 
   /* order: 2; */
+
+  justify-self: end;
+  align-self: flex-end;
 }
 .cell-2 {
   background: #f0a202;
