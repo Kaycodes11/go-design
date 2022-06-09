@@ -7,7 +7,7 @@
 .container {
   background-color: #ccc;
   padding: 10px;
-  /* height: 1000px; */
+  height: 1000px;
 
   display: flex;
 
@@ -37,8 +37,8 @@
 
 .item {
   background-color: #f1425d;
-  padding: 40px; /* space around the element itself */
-  margin: 30px;
+  padding: 30px; /* space around the element itself */
+  margin: 5px;
   /* how much space to leave around element's padding border  */
   color: #fff;
   font-size: 40px;
@@ -47,11 +47,12 @@
 .i2 {
   height: 200px;
   /*
+  flex-grow: 0;
   flex-basis: 200px;
   flex-shrink: 1;
   */
 
-  flex: 0 1 300px; /* flex-grow flex-shrink flex-basis */
+  flex: 0 1 300px;
 }
 
 .i3 {
@@ -61,7 +62,7 @@
 
 .i4 {
   /* moves vertically up/down based on flex-start (up)/ flex-end (down) vertically on cross axis */
-  align-self: flex-end;
+  /* align-self: flex-end; */
   /* moven up and down veritcally  to fill the avaiable space on the cross axis */
   /* align-self: stretch; */
 
