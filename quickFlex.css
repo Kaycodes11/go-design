@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.item {
+  background-color: #f1425d;
+  padding: 40px; /* space around the element itself */
+  margin: 30px; /* how much space to leave around element's padding border  */
+  color: #fff;
+  font-size: 40px;
+}
