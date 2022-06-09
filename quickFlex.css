@@ -6,12 +6,33 @@
 .container {
   background-color: #ccc;
   padding: 10px;
+
+  display: flex;
+  /* this is applied by default where vertical is cross axis and horizontal is main axis */
+  flex-direction: row;
+
+  /* here vertical become main axis while horizontal becomes cross axis */
+  /* flex-direction: column-reverse; */
+
+  justify-content: center;
+  align-items: stretch; /* Streach to fit the avaiable area vertically on cross axis */
+  align-items: flex-start; /* item  will start from beginning of cross axis */
+  align-items: flex-end; /* item  will start from the end of cross axis */
 }
 
 .item {
   background-color: #f1425d;
   padding: 40px; /* space around the element itself */
-  margin: 30px; /* how much space to leave around element's padding border  */
+  margin: 30px;
+  /* how much space to leave around element's padding border  */
   color: #fff;
   font-size: 40px;
+}
+
+.i2 {
+  height: 200px;
+}
+
+.i4 {
+  font-size: 70px;
 }
