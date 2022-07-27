@@ -20,7 +20,7 @@
   /* justify-content: center; */
   justify-content: space-between;
 
-  /* Streach to fit the avaiable area vertically on cross axis */
+  /* Stretch to fit the available area vertically on cross axis */
   /* align-items: stretch; */
 
   /* item  will start from beginning of cross axis */
@@ -63,7 +63,7 @@
 .i4 {
   /* moves vertically up/down based on flex-start (up)/ flex-end (down) vertically on cross axis */
   /* align-self: flex-end; */
-  /* moven up and down veritcally  to fill the avaiable space on the cross axis */
+  /* move up and down vertically  to fill the available space on the cross axis */
   /* align-self: stretch; */
 
   order: -1;
