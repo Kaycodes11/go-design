@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #202c59;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    /*flex-wrap: wrap;*/
+}
+
+.left {
+    background: white;
+    width: 400px;
+}
+
+.right {
+    background: #222222;
+    /* use the flex-grow property to make a flex item consume free space on the main axis.*/
+    flex-grow: 1;
+    /* to take available space simply use flex: 1 this is the shorthand */
+    /*flex: 1;*/
+}
+
+.item {
+    background-color: #f1425d;
+    /* space around the element itself */
+    padding: 30px;
+    margin: 5px;
+    /* how much space to leave around element's padding border  */
+    color: #fff;
+    font-size: 40px;
+}
+
+.i2 {
+    height: 200px;
+    /*
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    */
+    flex: 0 1 200px;
+}
+
+.i3 {
+    order: 1;
+    flex: 1;
+}
+
+.i4 {
+    order: -1;
+}
+
+
+
