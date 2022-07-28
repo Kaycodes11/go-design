@@ -1,0 +1,78 @@
+/* NOTE: transform = to use transform the element's display has to be `block` or `inline-block`
+transform: translate(x, y) = move element within 2d space horizontally/X and/or vertically/Y,
+scale(): scale i.e. resize element within 2d space horizontally/X axis and/or vertically/Y axis
+rotate(): rotate element within 2d space; 360deg/400grad/1 turn = 1 full rotation, positive-negative: clockwise, counter-clockwise rotation
+skew(): tilt element within 2d space horizontally/X axis and/or vertically/Y axis
+
+ */
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    margin: 100px auto;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: rotate(20deg) translate(20px, 20px) scale(1.5);
+
+    /*transform-origin: 0 0; !* transform-origin: top left; *!*/
+    /* moving origin to top left  */
+    /*transform-origin: 50% 0;*/
+
+    /* moving origin to left bottom */
+    /*transform-origin: left bottom;*/
+    /*transform-origin:  0 100%;*/
+
+    /* moving origin to  right bottom  */
+    /*transform-origin: right bottom;*/
+    /*transform-origin:  100% 100%;*/
+
+    /* moving origin to top right */
+    /*transform-origin: top right;*/
+    /*transform-origin:  100% 0;*/
+
+    /*transform-origin: center bottom;*/
+    /*transform: rotate(40deg);*/
+
+    /* ## transform: translate() */
+    /*transform: translate(-50%);*/
+    /*transform: translate(0, 50px);*/
+    /* so basically it will first move 100px horizontally i.e. x axis then 100px vertically i.e. y axis */
+    /*transform: translate(100px, 100px); !* x, y could be value like 100px or 50% *!*/
+
+    /* ## transform: scale() this method only takes numbers */
+
+    /* so here on "X" & "Y" axis make inner bigger 2times than its original size */
+    /*transform: scale(2, 2);*/
+    /*transform: scale(0.5);*/
+
+    /*transform: scaleX(2);*/
+    /*transform: scaleX(1.5);*/
+
+    /*transform: scaleY(2);*/
+    /*transform: scaleY(1.5);*/
+
+    /* ## transform: rotate() element on 2d surface  */
+    /*transform: rotate(-5deg);*/
+    /*transform: rotate(-5grad);*/
+    /*transform: rotate(1rad);*/
+    /*transform: rotate(0.2turn);*/
+
+    /* ## transform: skew() element on 2d surface  */
+    /*transform: skewX(10deg);*/
+    /*transform: skew(-20deg);*/
+
+    /*transform: skewY(10deg);*/
+    /*transform: skewY(-10deg);*/
+    /*transform: skew(10deg, 20deg);*/
+
+}
+
+.inline {
+    /* to make the inline element `transformable` make it `inline-block` */
+    display: inline-block;
+    transform: rotate(20deg);
+}
