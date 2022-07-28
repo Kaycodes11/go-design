@@ -1,0 +1,122 @@
+/*
+* transition-property: whichever css property e.g. transitioning | none | all (i.e transform all transformable elements);
+* transition-duration: 1000s | 1000ms;
+* transition-timing-function: ease | ease in | ease out | ease in out | linear | step start | step end | steps() | cubic_bezier(x1, y1, x2, y2) ;
+* transition-delay: setting a timeout before stating transition
+
+* transition : [css-property name] [duration] [timing function] [delay];
+
+*/
+.transition {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /*transition-property: all;*/
+    transition-property: background-color, width, height;
+    transition-duration: 0.5s;
+}
+
+.transition:hover {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.transition-div {
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    background: red;
+    transition: background-color 0.5s;
+}
+
+.transition-div:hover {
+    background-color: blue;
+}
+
+.transitioning {
+    color: white;
+    background-color: red;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    transition-property: margin-left;
+    transition-duration: 2s;
+
+}
+
+.container:hover .transitioning {
+    margin-left: 500px;
+}
+
+.ease {
+    transition-timing-function: ease;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.step-start {
+    transition-timing-function: step-start;
+    /* take a step then wait */
+    /*transition-timing-function: steps(10, start);*/
+}
+
+.step-end {
+    transition-timing-function: step-end;
+    /* wait then make a step */
+    /*transition-timing-function: steps(2, end);*/
+}
+
+.steps {
+    transition-timing-function: steps(10);
+}
+
+.cubic {
+    /* first use a random then use browser to get appropriate value  */
+    transition-timing-function: cubic-bezier(0.99, 0.5, 0.44, 0.54)
+}
+
+.delay1 {
+    transition-delay: 0.5s;
+}
+.delay2 {
+    transition-delay: 1s;
+}
+
+.together {
+    width: 200px;
+    height: 35px;
+    background-color: red;
+    /*transition-property: transform;*/
+    /*transition-duration: 1.25s;*/
+    /*transition-timing-function: cubic-bezier(1, 0.34, 0, 1.4);*/
+    /*transition-delay: .5s;*/
+
+    /*transition: transform 1.25s cubic-bezier(1, 0.34, 0, 1.4) 0.5s;*/
+
+    /* Transitioning two or more properties on an element   */
+    transition: width 0.5s, transform 1.5s, height 2s, background-color 1s ease-in-out 1s;
+}
+.together-container:hover .together {
+    transform: translateX(500px);
+    /* Transitioning two or more properties on an element   */
+    width: 400px;
+    height: 100px;
+    background-color: green;
+
+}
+
