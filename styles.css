@@ -1,53 +1,85 @@
-body {
-    background-color: #e0c764;
-    font-family: Raleway;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.svg-animation-container {
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    margin: 0 auto;
+    border-radius: 20%;
+    height: 500px;
 }
 
-.page-title {
-    margin-top: 30px;
+.svg-animation-container svg {
+    width: 100%;
 }
 
-.clock {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    margin-top: 50px;
-    border-radius: 50%;
-    border: 3px solid white;
+#BGElement {
+    animation: changeColor 3s infinite alternate;
 }
 
-.clock::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 15px;
-    background-color: white;
-    top: 50%;
-    left: 50%;
-    transform-origin: 50% 0%;
-    animation: rotate 2s linear infinite;
+@keyframes changeColor {
+    0% {
+        fill: red;
+    }
+    100% {
+        fill: blue;
+    }
 }
 
-.clock::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 25px;
-    background-color: white;
-    top: 50%;
-    left: 50%;
-    transform-origin: 50% 0%;
-    animation: rotate 0.75s linear infinite;
+#SoccerBall {
+    animation: bounce 1s infinite ease-out alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+#Shoe {
+    animation: rotate 2s infinite alternate;
+    transform-origin: right;
+    transform-box: fill-box;
 }
 
 @keyframes rotate {
     0% {
-        transform: rotate(0);
+        transform: rotate(10deg);
     }
-    100% {
-        transform: rotate(360deg);
+    70% {
+        transform: rotate(-5deg);
+    }
+}
+
+#RightHand {
+    animation: rotateHand 2s infinite alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+}
+
+#LeftHand {
+    animation: rotateLHand 2s infinite alternate;
+    transform-origin: top left;
+    transform-box: fill-box;
+}
+
+@keyframes rotateHand {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    70% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes rotateLHand {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
     }
 }
