@@ -1,4 +1,4 @@
-@import './styles/base.scss';
+@import "./styles/base.scss";
 
 :root {
   --primary-color: rgb(20, 20, 225);
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 5vmin;
   //background-color: var(--primary-color);
   //color: var(--fg-color, white);
@@ -19,12 +19,12 @@ a {
 
 h1 {
   margin: 0;
-  color: var(--primary-color);
-  transition: all 0.3s;
+  // color: var(--primary-color);
+  // transition: all 0.3s;
 
-  &:hover {
-    font-size: 10vw;
-  }
+  // &:hover {
+  //   font-size: 10vw;
+  // }
 }
 
 small {
@@ -41,32 +41,50 @@ ul {
 }
 
 .ball {
-  --primary-color: rgb(32, 220, 32);
+  // --primary-color: rgb(32, 220, 32);
   height: 5vmin;
   width: 5vmin;
+  left: 50vw;
   border-radius: 50%;
-  //background: radial-gradient(circle at bottom right, #fb2324, #fe932a);
-  //noinspection CssReplaceWithShorthandSafely
-  background-color: var(--primary-color);
-  animation: slide-right var(--duration) var(--easing) infinite;
+  background: radial-gradient(circle at bottom right, #fb2324, #fe932a);
+  background: #fb2324;
 
-  &:before {
-    --primary-color: orange;
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: var(--primary-color);
+  //  single or multiple keyframes as needed
+
+  animation-name: move-like-a-square, red-to-green;
+  animation-duration: 4s;
+  // animation-delay: 1s;
+  animation-fill-mode: both;
+  // animation-direction: alternate;
+  animation-iteration-count: 5;
+}
+
+@keyframes move-like-a-square {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: translateX(20vw);
+  }
+  50% {
+    transform: translateX(20vw) translateY(20vw);
+  }
+
+  75% {
+    transform: translateX(0) translateY(20vw);
+  }
+
+  100% {
+    transform: none;
   }
 }
 
-@keyframes slide-right {
+@keyframes red-to-green {
   from {
-    transform: translateX(0);
+    background: red;
   }
+
   to {
-    transform: translateX(50vw);
+    background-color: green;
   }
 }

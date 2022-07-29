@@ -51,7 +51,7 @@ body {
   height: var(--input-height);
   background-color: var(--color);
 
-  // new
+  // [ new
   transition-property: background-color, opacity, transform;
   transition-duration: 0.3s;
   transition-timing-function: linear, linear, ease-in-out;
@@ -65,7 +65,7 @@ body {
   &:active {
     transform: translateY(10%);
   }
-  // new
+  // new ]
 }
 
 [data-show]:not([data-active]) {
